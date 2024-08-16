@@ -1,0 +1,78 @@
+/* General reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.table-section {
+    flex: 1;
+    background-color: #f0f0f0; /* Light gray background for the table section */
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    position: relative;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50; /* Green background for headers */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternating row colors */
+}
+
+td[rowspan] {
+    background-color: #e0e0e0; /* Slightly different background for rowspan cells */
+}
+
+td[colspan] {
+    background-color: #d0d0d0; /* Slightly different background for colspan cells */
+}
+
+/* Flexbox layout for large screens On larger screens (min-width 768px),
+   the sections are laid out in a row.  */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+/* Stack sections for smaller screens on smaller screens (max-width 767px), they stack vertically. */
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Linking to CSS file -->
+    <title>Table</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Sample Data </h2>
+
+    <table> 
+        <!-- <th> elements create the table headers -->
+        <!-- for "ID," "Name," "Email," "Date of Birth," "Gender," and "Marital Status." -->
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Date of Birth</th>
+            <th>Gender</th>
+            <th>Marital Status</th>
+        </tr>
+        <tr> 
+             <!-- <tr> elements represent the rows in the table. Three users are represented. -->
+            <td rowspan="2">1</td>
+            <td rowspan="2">Aditya Kumar</td>
+            <!-- Rowspan: The rowspan="2" attribute in the first row allows "ID," "Name," and "Email" to
+             span two rows.This is used to create a multi-row cell. -->
+            <td rowspan="2">aadikumar@gmail.com</td>
+            <td>30-01-2006</td>
+            <td>Male</td>
+            <td>Single</td>
+        </tr>
+        <tr>
+            <!-- Colspan: The colspan="3" attribute in the second row allows the last three columns to be
+            merged into one cell.This demonstrates how to merge cells horizontally. -->
+            <td colspan="3">Gender: Female, Status: Single</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Anjali Kumari</td>
+            <td>anjaliKumari@gmail.com</td>
+            <td>16-08-1998</td>
+            <td>Female</td>
+            <td>Single</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Rishav Kumar</td>
+            <td>kumarRishav@gmail.com</td>
+            <td>12-12-1998</td>
+            <td>Male</td>
+            <td>Single</td>
+        </tr>
+    </table>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
